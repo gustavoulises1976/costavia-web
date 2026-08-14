@@ -8,7 +8,7 @@ import RosentalLogo from "../../icons/RosentalLogo";
 
 export default function CostaviaHeroDesktop() {
   return (
-    <section className="w-full h-screen relative overflow-hidden bg-zinc-50">
+    <section className="relative h-screen w-full overflow-hidden bg-zinc-50">
       <Image
         src="/images/home-hero.png"
         alt="Costavia hero"
@@ -17,22 +17,27 @@ export default function CostaviaHeroDesktop() {
         priority
       />
 
-      <div className="absolute inset-0 bg-black/25" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(120.81deg, rgba(0, 0, 0, 0) 55.81%, rgba(0, 13, 19, 0.62) 82.29%)",
+          backgroundBlendMode: "multiply",
+        }}
+      />
 
-      <div className="absolute inset-0 max-w-7xl mx-auto px-8 flex flex-col justify-between py-8">
-        <header>
-          <div className="absolute top-6 left-8 z-20">
-            <CostaviaLogo className="h-12 text-white" />
-          </div>
-        </header>
+      <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-8">
+        <div className="pt-2">
+          <CostaviaLogo className="h-12 text-white" />
+        </div>
 
-        <footer>
-          <div className="absolute bottom-6 left-8 z-20 flex gap-6 items-end">
-            <GagliardoLogo className="h-6" />
-            <ObringLogo className="h-6" />
-            <RosentalLogo className="h-6" />
+        <div className="pb-2">
+          <div className="flex items-end gap-5 md:gap-6">
+            <GagliardoLogo className="h-6 md:h-7" />
+            <ObringLogo className="h-6 md:h-7" />
+            <RosentalLogo className="h-6 md:h-7" />
           </div>
-        </footer>
+        </div>
       </div>
     </section>
   );

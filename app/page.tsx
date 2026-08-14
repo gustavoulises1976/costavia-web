@@ -1,9 +1,17 @@
-import CostaviaHero from "./components/CostaviaHero/CostaviaHero";
+import ContactForm from "./components/ContactForm/ContactForm";
+import Discover from "./components/Discover/Discover";
+import LaGranVida from "./components/LaGranVida/LaGranVida";
+import Project from "./components/Project/Project";
+import Residencias from "./components/Residencias/Residencias";
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-1 bg-zinc-50 font-sans dark:bg-black">
-      <CostaviaHero />
-    </main>
+    <>
+      <LaGranVida />
+      <Project />
+      <Residencias />
+      <Discover />
+      <ContactForm />
+    </>
   );
 }
