@@ -27,7 +27,7 @@ export default function ContactFormDesktop() {
   };
 
   return (
-    <section className="relative h-[593px] w-full bg-[#f4f1ec]">
+    <section className="relative h-[520px] w-full bg-[#ffffff]">
       <style>{`
         .contact-form-desktop input::placeholder,
         .contact-form-desktop textarea::placeholder {
@@ -223,7 +223,7 @@ export default function ContactFormDesktop() {
             <div className="pt-4">
               <button
                 type="submit"
-                className="w-full border border-black bg-transparent py-3 hover:bg-black hover:text-white transition-colors"
+                className="w-full border border-black bg-transparent py-3 text-black hover:bg-black hover:text-white transition-colors"
                 style={{
                   fontFamily: '"Helvetica Neue", Arial, sans-serif',
                   fontWeight: 400,
@@ -234,7 +234,6 @@ export default function ContactFormDesktop() {
                   textAlign: "center",
                   verticalAlign: "middle",
                   textTransform: "uppercase",
-                  color: "black",
                 }}
               >
                 Enviar

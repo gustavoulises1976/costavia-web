@@ -27,7 +27,7 @@ export default function ContactFormMobile() {
   };
 
   return (
-    <section className="relative w-full bg-[#f4f1ec] px-6 py-12">
+    <section className="relative w-full bg-white px-6 py-12">
       <style>{`
         .contact-form-mobile input::placeholder,
         .contact-form-mobile textarea::placeholder {
@@ -234,7 +234,7 @@ export default function ContactFormMobile() {
           <div className="pt-4">
             <button
               type="submit"
-              className="w-full border border-black bg-transparent py-3 hover:bg-black hover:text-white transition-colors"
+              className="w-full border border-black bg-transparent py-3 text-black hover:bg-black hover:text-white transition-colors"
               style={{
                 fontFamily: '"Helvetica Neue", Arial, sans-serif',
                 fontWeight: 400,
@@ -245,7 +245,6 @@ export default function ContactFormMobile() {
                 textAlign: "center",
                 verticalAlign: "middle",
                 textTransform: "uppercase",
-                color: "black",
               }}
             >
               Enviar
