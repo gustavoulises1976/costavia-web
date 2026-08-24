@@ -34,7 +34,7 @@ export default function Residencias() {
                 </div>
 
                 <a
-                  href="#"
+                  href="/residencias"
                   className="inline-block uppercase text-[#1a1a1a] underline decoration-[2px] underline-offset-[8px]"
                   style={{
                     fontFamily: '"Helvetica Neue", Arial, sans-serif',

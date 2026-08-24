@@ -28,7 +28,7 @@ export default function Project() {
             </h2>
 
             <a
-              href="#"
+              href="/proyecto"
               className="absolute bottom-0 left-0 inline-block uppercase text-[#F8F7F2]"
               style={{
                 fontFamily: '"Helvetica Neue", Arial, sans-serif',

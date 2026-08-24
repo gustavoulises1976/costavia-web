@@ -55,7 +55,7 @@ export default function ResidenciasTowers() {
         </div>
 
         <a
-          href="#"
+          href="/contacto"
           className="whitespace-nowrap uppercase text-[#F8F7F2] underline decoration-[1.5px] underline-offset-[6px]"
           style={{
             fontFamily: '"Helvetica Neue", Arial, sans-serif',

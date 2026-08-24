@@ -42,7 +42,7 @@ export default function Discover() {
           </div>
 
           <a
-            href="#"
+            href="/amenities"
             className="inline-block uppercase text-[#f7f7f3] underline decoration-[2px] underline-offset-[12px]"
             style={{
               fontFamily: '"Helvetica Neue", Arial, sans-serif',

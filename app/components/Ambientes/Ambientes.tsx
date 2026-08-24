@@ -51,6 +51,7 @@ export default function Ambientes() {
       slides={slides}
       gridImages={gridImages}
       ctaLabel="Conocé más"
+      ctaHref="/contacto"
     />
   );
 }

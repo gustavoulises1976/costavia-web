@@ -27,7 +27,8 @@ export default function PH() {
 
             <h2
               style={{
-                fontFamily: '"PP Fraktion Sans", "Helvetica Neue", Arial, sans-serif',
+                fontFamily:
+                  '"PP Fraktion Sans", "Helvetica Neue", Arial, sans-serif',
                 fontWeight: 390,
                 fontStyle: "normal",
                 fontSize: "45px",
@@ -43,7 +44,8 @@ export default function PH() {
 
             <p
               style={{
-                fontFamily: '"PP Fraktion Sans", "Helvetica Neue", Arial, sans-serif',
+                fontFamily:
+                  '"PP Fraktion Sans", "Helvetica Neue", Arial, sans-serif',
                 fontWeight: 390,
                 fontStyle: "normal",
                 fontSize: "26.17px",
@@ -57,7 +59,9 @@ export default function PH() {
           </div>
 
           <a
-            href="#"
+            href="https://costaviaph.com/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex w-fit items-center gap-3 text-black transition-opacity hover:opacity-70"
           >
             <span
