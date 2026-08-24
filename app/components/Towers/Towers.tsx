@@ -39,7 +39,7 @@ export default function Towers() {
       </div>
 
       <div
-        className="mt-20 grid items-start gap-4 text-black"
+        className="mt-12 grid items-start gap-4 text-black"
         style={{ gridTemplateColumns }}
       >
         <p className="box-border" style={{ ...textStyle, paddingLeft: 100 }}>

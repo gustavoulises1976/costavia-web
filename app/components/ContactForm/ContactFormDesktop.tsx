@@ -34,7 +34,7 @@ export default function ContactFormDesktop() {
           color: #7B7B7B;
         }
       `}</style>
-      <div className="mx-auto flex h-full max-w-7xl">
+      <div className="ml-2 pt-5 flex h-full max-w-7xl">
         {/* Left side: Text content */}
         <div className="flex w-1/2 flex-col justify-start px-12 py-16">
           <div>
