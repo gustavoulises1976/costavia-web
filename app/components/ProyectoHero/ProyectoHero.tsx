@@ -1,11 +1,11 @@
-"use client";
-
-import { useIsMobile } from "../../hooks/useIsMobile";
-import ProyectoHeroDesktop from "./ProyectoHeroDesktop";
-import ProyectoHeroMobile from "./ProyectoHeroMobile";
+import PageHero from "../PageHero/PageHero";
 
 export default function ProyectoHero() {
-  const isMobile = useIsMobile();
-
-  return isMobile ? <ProyectoHeroMobile /> : <ProyectoHeroDesktop />;
+  return (
+    <PageHero
+      imageSrc="/images/proyecto-1.png"
+      imageAlt="Costavia proyecto"
+      title="Proyecto"
+    />
+  );
 }

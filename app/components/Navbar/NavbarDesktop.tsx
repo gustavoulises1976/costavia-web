@@ -4,9 +4,9 @@ import CostaviaLogo from "../../icons/CostaviaLogo";
 const navItems = [
   { label: "Proyecto", href: "/proyecto" },
   { label: "Residencias", href: "/residencias" },
-  { label: "Amenitites", href: "#" },
-  { label: "Equipo", href: "#" },
-  { label: "Contacto", href: "#" },
+  { label: "Amenities", href: "/amenities" },
+  { label: "Equipo", href: "/equipo" },
+  { label: "Contacto", href: "/contacto" },
 ];
 
 export default function NavbarDesktop() {

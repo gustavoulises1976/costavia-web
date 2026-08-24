@@ -1,11 +1,15 @@
-"use client";
-
-import { useIsMobile } from "../../hooks/useIsMobile";
-import ResidenciasHeroDesktop from "./ResidenciasHeroDesktop";
-import ResidenciasHeroMobile from "./ResidenciasHeroMobile";
+import PageHero from "../PageHero/PageHero";
+import DepartamentosBar from "./DepartamentosBar";
 
 export default function ResidenciasHero() {
-  const isMobile = useIsMobile();
-
-  return isMobile ? <ResidenciasHeroMobile /> : <ResidenciasHeroDesktop />;
+  return (
+    <>
+      <PageHero
+        imageSrc="/images/resi1.png"
+        imageAlt="Costavia residencias"
+        title="Residencias"
+      />
+      <DepartamentosBar />
+    </>
+  );
 }
