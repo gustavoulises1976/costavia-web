@@ -11,7 +11,7 @@ export default function ContactFormMobile() {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -42,7 +42,25 @@ export default function ContactFormMobile() {
               fontFamily: '"Helvetica Neue", Arial, sans-serif',
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "24px",
+              fontSize: "15px",
+              lineHeight: "100%",
+              letterSpacing: "0.04em",
+              verticalAlign: "middle",
+              textTransform: "uppercase",
+              marginBottom: "16px",
+              color: "black",
+              paddingBottom: "10px",
+            }}
+          >
+            Contacto
+          </p>
+
+          <p
+            style={{
+              fontFamily: '"Helvetica Neue", Arial, sans-serif',
+              fontWeight: 400,
+              fontStyle: "normal",
+              fontSize: "27px",
               lineHeight: "103%",
               letterSpacing: "0%",
               textTransform: "uppercase",
@@ -57,12 +75,13 @@ export default function ContactFormMobile() {
               fontFamily: '"Utopia Std", "Georgia", serif',
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "24px",
+              fontSize: "27px",
               lineHeight: "103%",
               letterSpacing: "0%",
               textTransform: "uppercase",
-              marginBottom: "16px",
+              marginBottom: "12px",
               color: "black",
+              paddingBottom: "10px",
             }}
           >
             la gran vida costavia
@@ -73,44 +92,28 @@ export default function ContactFormMobile() {
               fontFamily: '"Helvetica Neue", Arial, sans-serif',
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "16px",
+              fontSize: "18px",
               lineHeight: "139%",
               letterSpacing: "0%",
               color: "black",
-              marginBottom: "8px",
+              marginBottom: "30px",
             }}
           >
-            Contactate con nosotros completando el formulario o llamando a nuestras líneas telefónicas.
-          </p>
-
-          <p
-            style={{
-              fontFamily: '"Helvetica Neue", Arial, sans-serif',
-              fontWeight: 400,
-              fontStyle: "normal",
-              fontSize: "14px",
-              lineHeight: "150%",
-              letterSpacing: "0%",
-              textTransform: "uppercase",
-              marginBottom: "12px",
-              marginTop: "0px",
-              color: "black",
-            }}
-          >
-            Datos de contacto
+            Contactate con nosotros completando el formulario o llamando a
+            nuestras líneas telefónicas.
           </p>
           <p
             style={{
               fontFamily: '"Helvetica Neue", Arial, sans-serif',
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "12px",
+              fontSize: "12.21px",
               lineHeight: "150%",
               letterSpacing: "0%",
               color: "black",
             }}
           >
-            OIRING
+            OBRING
             <br />
             +54 9 3412 10-8514
           </p>
@@ -119,7 +122,7 @@ export default function ContactFormMobile() {
               fontFamily: '"Helvetica Neue", Arial, sans-serif',
               fontWeight: 400,
               fontStyle: "normal",
-              fontSize: "12px",
+              fontSize: "12.21px",
               lineHeight: "150%",
               letterSpacing: "0%",
               marginTop: "12px",
@@ -133,7 +136,10 @@ export default function ContactFormMobile() {
         </div>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="contact-form-mobile space-y-8">
+        <form
+          onSubmit={handleSubmit}
+          className="contact-form-mobile space-y-10"
+        >
           <div>
             <label htmlFor="name" className="sr-only">
               Nombre y apellido

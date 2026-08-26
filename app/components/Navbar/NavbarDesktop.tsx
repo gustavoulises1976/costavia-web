@@ -11,7 +11,7 @@ const navItems = [
 
 export default function NavbarDesktop() {
   return (
-    <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-5 md:px-6 py-4">
+    <header className="fixed inset-x-0 top-0 z-40 flex items-center justify-between px-5 md:px-6 py-4">
       <Link href="/" className="flex items-center">
         <CostaviaLogo className="h-8 md:h-10 text-white" />
       </Link>

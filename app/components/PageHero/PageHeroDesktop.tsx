@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Navbar from "../Navbar/Navbar";
 import type { PageHeroProps } from "./PageHero";
 
 export default function PageHeroDesktop({
@@ -32,8 +31,6 @@ export default function PageHeroDesktop({
               "linear-gradient(222.56deg, rgba(0, 0, 0, 0) 56.65%, rgba(0, 0, 0, 0.48) 80.23%)",
           }}
         />
-
-        <Navbar />
 
         <div className="absolute inset-x-0 bottom-0 left-0 z-10 flex items-end justify-start px-8 pb-10 md:px-10 lg:px-14">
           <h1
