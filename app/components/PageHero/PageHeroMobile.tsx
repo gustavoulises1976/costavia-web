@@ -10,12 +10,11 @@ export default function PageHeroMobile({
   bottomPadding = true,
 }: PageHeroProps) {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-zinc-50">
-      <div
-        className={`absolute inset-x-0 top-12 bottom-0 px-[10px] ${
-          bottomPadding ? "pb-[10px]" : ""
-        }`}
-      >
+    <section
+      className="relative mt-12 w-full overflow-hidden bg-zinc-50"
+      style={{ height: "calc(100dvh - 48px)" }}
+    >
+      <div className={`h-full w-full p-2 ${bottomPadding ? "" : "pb-0"}`}>
         <div className="relative h-full w-full overflow-hidden border border-white/80 bg-white shadow-[0_0_0_1px_rgba(255,255,255,0.8)]">
           <Image
             src={imageSrc}
