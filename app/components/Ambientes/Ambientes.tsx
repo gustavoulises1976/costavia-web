@@ -1,3 +1,6 @@
+"use client";
+
+import { useIsMobile } from "../../hooks/useIsMobile";
 import MediaShowcase from "../MediaShowcase/MediaShowcase";
 
 const slides = [
@@ -12,13 +15,7 @@ const gridImages = [
   {
     src: "/images/resi7.png",
     alt: "Cocinas con diseño en isla",
-    caption: (
-      <>
-        Cocinas con diseño
-        <br />
-        en isla.
-      </>
-    ),
+    caption: <>Cocinas con diseño en isla.</>,
   },
   {
     src: "/images/resi8.png",
@@ -45,11 +42,13 @@ const gridImages = [
 ];
 
 export default function Ambientes() {
+  const isMobile = useIsMobile();
+
   return (
     <MediaShowcase
       label="Costavia ambientes"
       slides={slides}
-      gridImages={gridImages}
+      gridImages={isMobile ? [] : gridImages}
       ctaLabel="Conocé más"
       ctaHref="/contacto"
     />
