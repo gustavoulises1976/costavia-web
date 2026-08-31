@@ -1,30 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useContactForm } from "./useContactForm";
 
 export default function ContactFormMobile() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
-  };
+  const { formData, status, errorMessage, handleChange, handleSubmit } =
+    useContactForm();
 
   return (
     <section className="relative w-full bg-white px-6 py-12">
@@ -148,6 +128,7 @@ export default function ContactFormMobile() {
               type="text"
               id="name"
               name="name"
+              required
               placeholder="Nombre y apellido"
               value={formData.name}
               onChange={handleChange}
@@ -172,6 +153,7 @@ export default function ContactFormMobile() {
               type="email"
               id="email"
               name="email"
+              required
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
@@ -196,6 +178,7 @@ export default function ContactFormMobile() {
               type="tel"
               id="phone"
               name="phone"
+              required
               placeholder="Celular"
               value={formData.phone}
               onChange={handleChange}
@@ -240,7 +223,8 @@ export default function ContactFormMobile() {
           <div className="pt-4">
             <button
               type="submit"
-              className="w-full border border-black bg-transparent py-3 text-black hover:bg-black hover:text-white transition-colors"
+              className="w-full border border-black bg-transparent py-3 text-black hover:bg-black hover:text-white transition-colors disabled:cursor-not-allowed disabled:opacity-50"
+              disabled={status === "sending"}
               style={{
                 fontFamily: '"Helvetica Neue", Arial, sans-serif',
                 fontWeight: 400,
@@ -253,8 +237,39 @@ export default function ContactFormMobile() {
                 textTransform: "uppercase",
               }}
             >
-              Enviar
+              {status === "sending" ? "Enviando..." : "Enviar"}
             </button>
+
+            {status === "success" && (
+              <p
+                role="status"
+                style={{
+                  fontFamily: '"Helvetica Neue", Arial, sans-serif',
+                  fontSize: "14px",
+                  lineHeight: "139%",
+                  marginTop: "12px",
+                  color: "black",
+                }}
+              >
+                ¡Gracias! Recibimos tu consulta y te vamos a contactar a la
+                brevedad.
+              </p>
+            )}
+
+            {status === "error" && (
+              <p
+                role="alert"
+                style={{
+                  fontFamily: '"Helvetica Neue", Arial, sans-serif',
+                  fontSize: "14px",
+                  lineHeight: "139%",
+                  marginTop: "12px",
+                  color: "#B00020",
+                }}
+              >
+                {errorMessage}
+              </p>
+            )}
           </div>
         </form>
       </div>
