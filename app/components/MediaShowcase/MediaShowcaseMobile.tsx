@@ -57,16 +57,16 @@ export default function MediaShowcaseMobile({
           className="flex h-full w-full snap-x snap-mandatory overflow-x-auto [&::-webkit-scrollbar]:hidden"
           style={{ scrollbarWidth: "none" }}
         >
-          {slides.map((src, index) => (
+          {slides.map((slide, index) => (
             <div
-              key={src}
+              key={slide.src}
               className="relative h-full w-full flex-none snap-center overflow-hidden"
             >
               <Image
-                src={src}
+                src={slide.src}
                 alt={`${label} ${index + 1}`}
                 fill
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", ...slide.mobileStyle }}
                 priority={index === 0}
               />
             </div>
@@ -74,9 +74,9 @@ export default function MediaShowcaseMobile({
         </div>
 
         <div className="absolute inset-x-0 bottom-6 z-20 flex items-center justify-center gap-3">
-          {slides.map((src, index) => (
+          {slides.map((slide, index) => (
             <button
-              key={src}
+              key={slide.src}
               type="button"
               aria-label={`Ir a la imagen ${index + 1}`}
               onClick={() => goTo(index)}
@@ -108,7 +108,7 @@ export default function MediaShowcaseMobile({
                         src={image.src}
                         alt={image.alt}
                         fill
-                        style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover", ...image.mobileStyle }}
                       />
                     </div>
                   ))}

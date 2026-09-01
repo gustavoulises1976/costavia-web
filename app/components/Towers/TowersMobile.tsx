@@ -1,13 +1,29 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
-const images = [
-  "/images/proyecto-6.jpg",
-  "/images/proyecto-7.png",
-  "/images/proyecto-8.png",
-  "/images/proyecto-9.png",
+type TowerImage = {
+  src: string;
+  alt?: string;
+  /**
+   * Estilo del <Image>, se mergea encima del `objectFit: "cover"` por defecto.
+   *
+   * Para reencuadrar, `objectPosition`. Ojo con el sentido: con `cover` la
+   * imagen es más ancha que el contenedor, así que un porcentaje MÁS BAJO la
+   * corre hacia la DERECHA (se ve más del lado izquierdo) y uno más alto la
+   * corre hacia la izquierda. "50% 50%" es el centro.
+   *
+   * También sirve para `objectFit`, `transform: "scale(1.1)"`, etc.
+   */
+  style?: CSSProperties;
+};
+
+const images: TowerImage[] = [
+  { src: "/images/proyecto-6.jpg", style: { objectPosition: "50% 100%" } },
+  { src: "/images/proyecto-7.png", style: { objectPosition: "50% 80%" } },
+  { src: "/images/proyecto-8.png", style: { objectPosition: "50% 100%" } },
+  { src: "/images/proyecto-9.png", style: { objectPosition: "50% 100%" } },
 ];
 
 const extendedImages = [images[images.length - 1], ...images, images[0]];
@@ -73,16 +89,16 @@ export default function TowersMobile() {
               className="flex h-full w-full snap-x snap-mandatory overflow-x-auto [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none" }}
             >
-              {extendedImages.map((src, index) => (
+              {extendedImages.map((image, index) => (
                 <div
-                  key={`${src}-${index}`}
+                  key={`${image.src}-${index}`}
                   className="relative h-full w-full flex-none snap-center"
                 >
                   <Image
-                    src={src}
-                    alt="Costavia torres"
+                    src={image.src}
+                    alt={image.alt ?? "Costavia torres"}
                     fill
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", ...image.style }}
                     priority={index === 1}
                   />
                 </div>
@@ -92,9 +108,9 @@ export default function TowersMobile() {
         </div>
 
         <div className="flex items-center justify-center gap-3 pb-2 pt-4">
-          {images.map((src, index) => (
+          {images.map((image, index) => (
             <button
-              key={src}
+              key={image.src}
               type="button"
               aria-label={`Ir a la imagen ${index + 1}`}
               onClick={() => goTo(index)}

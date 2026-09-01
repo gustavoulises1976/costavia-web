@@ -6,6 +6,7 @@ export default function ProyectoHero() {
       imageSrc="/images/proyecto-mobile-1.jpg"
       imageAlt="Costavia proyecto"
       title="Proyecto"
+      mobileImageStyle={{ objectPosition: "0% 100%" }}
     />
   );
 }

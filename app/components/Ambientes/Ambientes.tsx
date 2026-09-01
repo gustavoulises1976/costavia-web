@@ -1,14 +1,24 @@
 "use client";
 
 import { useIsMobile } from "../../hooks/useIsMobile";
-import MediaShowcase from "../MediaShowcase/MediaShowcase";
+import MediaShowcase, {
+  type MediaShowcaseSlide,
+} from "../MediaShowcase/MediaShowcase";
 
-const slides = [
-  "/images/resicaru1.png",
-  "/images/resicaru2.png",
-  "/images/resicaru3.jpg",
-  "/images/resicaru4.jpg",
-  "/images/resicaru5.png",
+const slides: MediaShowcaseSlide[] = [
+  { src: "/images/resicaru1.png" },
+  { src: "/images/resicaru2.png" },
+  { src: "/images/resicaru3.jpg" },
+  { src: "/images/resicaru4.jpg" },
+  { src: "/images/resicaru5.png" },
+];
+
+const mobileSlides: MediaShowcaseSlide[] = [
+  { src: "/images/slide1-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/slide2-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/slide3-mob.jpg", mobileStyle: { objectPosition: "30% 50%" } },
+  { src: "/images/slide4-mob.jpg", mobileStyle: { objectPosition: "70% 50%" } },
+  { src: "/images/slide5-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
 ];
 
 const gridImages = [
@@ -47,7 +57,7 @@ export default function Ambientes() {
   return (
     <MediaShowcase
       label="Costavia ambientes"
-      slides={slides}
+      slides={isMobile ? mobileSlides : slides}
       gridImages={isMobile ? [] : gridImages}
       ctaLabel="Conocé más"
       ctaHref="/contacto"

@@ -7,7 +7,7 @@ export default function ContactFormMobile() {
     useContactForm();
 
   return (
-    <section className="relative w-full bg-white px-6 py-12">
+    <section className="relative w-full border-t border-gray-300 bg-white px-6 py-12">
       <style>{`
         .contact-form-mobile input::placeholder,
         .contact-form-mobile textarea::placeholder {

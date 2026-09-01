@@ -1,19 +1,22 @@
 "use client";
 
 import { useIsMobile } from "../../hooks/useIsMobile";
-import MediaShowcase from "../MediaShowcase/MediaShowcase";
+import MediaShowcase, {
+  type MediaShowcaseGridImage,
+  type MediaShowcaseSlide,
+} from "../MediaShowcase/MediaShowcase";
 
-const slides = [
-  "/images/resi3.png",
-  "/images/resi31.png",
-  "/images/resi32.png",
-  "/images/resi33.png",
-  "/images/resi34.png",
-  "/images/resi35.png",
-  "/images/resi36.png",
+const slides: MediaShowcaseSlide[] = [
+  { src: "/images/resi3-mob.png", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi32-mob.jpg", mobileStyle: { objectPosition: "30% 50%" } },
+  { src: "/images/resi33-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi34-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi35-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi36-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi37-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
 ];
 
-const mobileOnlyGridImages = [
+const mobileOnlyGridImages: MediaShowcaseGridImage[] = [
   {
     src: "/images/balcones-mobile.jpg",
     alt: "Balcones y terrazas con vegetación nativa",
@@ -24,6 +27,7 @@ const mobileOnlyGridImages = [
         con vegetación nativa.
       </>
     ),
+    mobileStyle: { objectPosition: "50% 50%" },
   },
   {
     src: "/images/ext-mobile.jpeg",
@@ -35,6 +39,7 @@ const mobileOnlyGridImages = [
         para cocina exterior.
       </>
     ),
+    mobileStyle: { objectPosition: "30% 50%" },
   },
   {
     src: "/images/banos-mobile.jpg",
@@ -46,6 +51,37 @@ const mobileOnlyGridImages = [
         sanitarios Ferrum y grifería FV.
       </>
     ),
+    mobileStyle: { objectPosition: "50% 50%" },
+  },
+  {
+    src: "/images/resi-grid-mob.jpg",
+    alt: "Cocinas con diseño en isla",
+    caption: <>Cocinas con diseño en isla.</>,
+    mobileStyle: { objectPosition: "50% 50%" },
+  },
+  {
+    src: "/images/resi-grid-mob-2.png",
+    alt: "Placares completos en todos los dormitorios",
+    caption: (
+      <>
+        Placares completos en
+        <br />
+        todos los dormitorios.
+      </>
+    ),
+    mobileStyle: { objectPosition: "50% 50%" },
+  },
+  {
+    src: "/images/resi-grid-mob-3.png",
+    alt: "Pisos de madera de ingeniería en roble en todos los ambientes",
+    caption: (
+      <>
+        Pisos de madera de ingeniería
+        <br />
+        en roble en todos los ambientes.
+      </>
+    ),
+    mobileStyle: { objectPosition: "50% 50%" },
   },
 ];
 
@@ -92,9 +128,7 @@ export default function Amenities() {
     <MediaShowcase
       label="Costavia amenities"
       slides={slides}
-      gridImages={
-        isMobile ? [...mobileOnlyGridImages, ...gridImages] : gridImages
-      }
+      gridImages={isMobile ? mobileOnlyGridImages : gridImages}
     />
   );
 }

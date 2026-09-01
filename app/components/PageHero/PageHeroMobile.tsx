@@ -5,9 +5,11 @@ import type { PageHeroProps } from "./PageHero";
 
 export default function PageHeroMobile({
   imageSrc,
+  mobileImageSrc,
   imageAlt,
   title,
   bottomPadding = true,
+  mobileImageStyle,
 }: PageHeroProps) {
   return (
     <section
@@ -17,10 +19,10 @@ export default function PageHeroMobile({
       <div className={`h-full w-full p-2 ${bottomPadding ? "" : "pb-0"}`}>
         <div className="relative h-full w-full overflow-hidden border border-white/80 bg-white shadow-[0_0_0_1px_rgba(255,255,255,0.8)]">
           <Image
-            src={imageSrc}
+            src={mobileImageSrc ?? imageSrc}
             alt={imageAlt}
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", ...mobileImageStyle }}
             priority
           />
 

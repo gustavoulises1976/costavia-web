@@ -32,14 +32,14 @@ export default function MediaShowcaseDesktop({
   return (
     <section className="w-full bg-white px-2.5 pb-20">
       <div className="relative h-[730px] w-full overflow-hidden">
-        {slides.map((src, index) => (
+        {slides.map((slide, index) => (
           <div
-            key={src}
+            key={slide.src}
             className="absolute inset-0 transition-opacity duration-500"
             style={{ opacity: index === current ? 1 : 0 }}
           >
             <Image
-              src={src}
+              src={slide.src}
               alt={`${label} ${index + 1}`}
               fill
               style={{ objectFit: "cover" }}
@@ -67,9 +67,9 @@ export default function MediaShowcaseDesktop({
         </button>
 
         <div className="absolute inset-x-0 bottom-6 z-20 flex items-center justify-center gap-3">
-          {slides.map((src, index) => (
+          {slides.map((slide, index) => (
             <button
-              key={src}
+              key={slide.src}
               type="button"
               aria-label={`Ir a la imagen ${index + 1}`}
               onClick={() => goTo(index)}

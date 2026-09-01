@@ -1,13 +1,25 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
+
+// Recorte vertical propio de mobile. La versión apaisada (resi2.png, 1440x861)
+// la sigue usando el desktop; acá con object-fit: cover se perdía ~70% del
+// ancho y objectPosition en Y quedaba inerte por no haber sobrante vertical.
+const imageSrc = "/images/towers-mob.jpg";
+
+// Se mergea encima del objectFit. La imagen (1672x2648, ratio 0.63) sigue
+// siendo menos alargada que la pantalla, así que cover escala por el alto y el
+// recorte pasa por el eje X: mover el primer valor corre la imagen (más bajo =
+// hacia la derecha). El segundo valor no tiene recorrido. "50% 50%" es centro.
+const imageStyle: CSSProperties = { objectPosition: "50% 50%" };
 
 export default function ResidenciasTowersMobile() {
   return (
     <section className="relative h-[calc(100vh-3rem)] w-full overflow-hidden bg-zinc-50">
       <Image
-        src="/images/resi2.png"
+        src={imageSrc}
         alt="Costavia tres torres"
         fill
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", ...imageStyle }}
       />
 
       <div

@@ -3,13 +3,16 @@ import ArrowIcon from "../../icons/ArrowIcon";
 
 export default function LocationMobile() {
   return (
-    <section className="relative h-[calc(100vh-3rem)] w-full overflow-hidden bg-zinc-50 p-2">
-      <div className="relative h-full w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden bg-zinc-50 p-2">
+      {/* Sin alto fijo: la imagen entra con sus dimensiones intrínsecas y la
+          sección toma su alto, así no quedan franjas vacías como con contain. */}
+      <div className="relative w-full overflow-hidden">
         <Image
-          src="/images/proyecto-4.png"
+          src="/images/proyecto-4-mob.png"
           alt="Ubicación de Costavia"
-          fill
-          style={{ objectFit: "cover", objectPosition: "62%" }}
+          width={1348}
+          height={1852}
+          className="h-auto w-full"
         />
 
         <div className="absolute inset-x-0 top-0 z-10 flex items-start justify-start px-6 pt-8">
