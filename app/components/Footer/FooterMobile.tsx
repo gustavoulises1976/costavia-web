@@ -43,7 +43,7 @@ export default function FooterMobile() {
             textAlign: "center",
           }}
         >
-          2025 Landmark. Todos los derechos reservados.
+          2025 ark. Todos los derechos reservados.
         </p>
       </div>
     </footer>

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import CostaviaLogo from "../../icons/CostaviaLogo";
 import GagliardoLogo from "../../icons/GagliardoLogo";
 import ObringLogo from "../../icons/ObringLogo";
 import RosentalLogo from "../../icons/RosentalLogo";
@@ -13,7 +12,7 @@ export default function CostaviaHeroDesktop() {
         src="/images/home-hero.png"
         alt="Costavia hero"
         fill
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "cover", objectPosition: "top" }}
         priority
       />
 
@@ -26,16 +25,12 @@ export default function CostaviaHeroDesktop() {
         }}
       />
 
-      <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-8">
-        <div className="pt-2">
-          <CostaviaLogo className="h-12 text-white" />
-        </div>
-
+      <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
         <div className="pb-2">
-          <div className="flex items-end gap-5 md:gap-6">
-            <GagliardoLogo className="h-6 md:h-7" />
-            <ObringLogo className="h-6 md:h-7" />
-            <RosentalLogo className="h-6 md:h-7" />
+          <div className="ml-10 flex items-end gap-15">
+            <GagliardoLogo className="h-10" />
+            <ObringLogo className="h-10" />
+            <RosentalLogo className="h-10" />
           </div>
         </div>
       </div>

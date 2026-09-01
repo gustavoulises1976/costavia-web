@@ -61,6 +61,20 @@ export default function FooterDesktop() {
             +54 9 3416 71-9710
           </p>
         </div>
+
+        <p
+          className="self-start"
+          style={{
+            fontFamily: '"Helvetica Neue", Arial, sans-serif',
+            fontWeight: 400,
+            fontStyle: "normal",
+            fontSize: "14px",
+            lineHeight: "150%",
+            letterSpacing: "0%",
+          }}
+        >
+          2025 Costavía. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   );

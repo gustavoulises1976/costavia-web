@@ -81,24 +81,26 @@ export default function MediaShowcaseDesktop({
         </div>
       </div>
 
-      <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
-        {gridImages.map((image) => (
-          <div key={image.src} className="flex flex-col gap-4">
-            <div className="relative h-[568px] w-full overflow-hidden">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </div>
+      {gridImages && gridImages.length > 0 && (
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+          {gridImages.map((image) => (
+            <div key={image.src} className="flex flex-col gap-4">
+              <div className="relative h-[568px] w-full overflow-hidden">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
 
-            <p className="text-black" style={textStyle}>
-              {image.caption}
-            </p>
-          </div>
-        ))}
-      </div>
+              <p className="text-black" style={textStyle}>
+                {image.caption}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
 
       {ctaLabel && (
         <div className="mt-10">
