@@ -20,10 +20,10 @@ type TowerImage = {
 };
 
 const images: TowerImage[] = [
-  { src: "/images/proyecto-6.jpg", style: { objectPosition: "50% 100%" } },
-  { src: "/images/proyecto-7.png", style: { objectPosition: "50% 80%" } },
-  { src: "/images/proyecto-8.png", style: { objectPosition: "50% 100%" } },
-  { src: "/images/proyecto-9.png", style: { objectPosition: "50% 100%" } },
+  { src: "/images/proyecto-6.webp", style: { objectPosition: "50% 100%" } },
+  { src: "/images/proyecto-7.webp", style: { objectPosition: "50% 80%" } },
+  { src: "/images/proyecto-8.webp", style: { objectPosition: "50% 100%" } },
+  { src: "/images/proyecto-9.webp", style: { objectPosition: "50% 100%" } },
 ];
 
 const extendedImages = [images[images.length - 1], ...images, images[0]];

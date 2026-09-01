@@ -5,7 +5,7 @@ export default function DiscoverDesktop() {
     <section className="relative h-screen w-full overflow-hidden bg-[#f4f1ec]">
       <div className="relative h-full w-full overflow-hidden bg-white shadow-[0_0_0_1px_rgba(255,255,255,0.8)]">
         <Image
-          src="/images/pileta-interior.png"
+          src="/images/pileta-interior.webp"
           alt="Interior de piscina"
           fill
           style={{ objectFit: "cover", objectPosition: "bottom" }}

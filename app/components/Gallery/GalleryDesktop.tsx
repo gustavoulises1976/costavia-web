@@ -57,7 +57,7 @@ export default function GalleryDesktop() {
   return (
     <section className="w-full bg-white px-2.5 pb-15">
       <GalleryImage
-        src="/images/ame2.png"
+        src="/images/ame2.webp"
         alt="Piscina exterior"
         caption="Piscina exterior"
         aspectRatio="1404 / 720"
@@ -65,14 +65,14 @@ export default function GalleryDesktop() {
 
       <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-[440fr_946fr] pb-24">
         <GalleryImage
-          src="/images/ame3.png"
+          src="/images/ame3.webp"
           alt="Lounge"
           caption="Lounge"
           aspectRatio="440 / 660"
         />
 
         <GalleryImage
-          src="/images/ame4.png"
+          src="/images/ame4.webp"
           alt="Piscina interior"
           caption="Piscina interior"
           aspectRatio="946 / 480"
@@ -80,7 +80,7 @@ export default function GalleryDesktop() {
       </div>
 
       <GalleryImage
-        src="/images/ame5.png"
+        src="/images/ame5.webp"
         alt="Piscinas suspendidas"
         caption="Piscinas suspendidas"
         aspectRatio="1404 / 720"
@@ -90,7 +90,7 @@ export default function GalleryDesktop() {
 
       <div className="mt-4 flex flex-col items-start gap-4 md:flex-row pb-24">
         <GalleryImage
-          src="/images/ame6.png"
+          src="/images/ame6.webp"
           alt="Gimnasio"
           caption="Gimnasio"
           aspectRatio="612 / 360"
@@ -98,7 +98,7 @@ export default function GalleryDesktop() {
         />
 
         <GalleryImage
-          src="/images/ame7.png"
+          src="/images/ame7.webp"
           alt="Costavia amenities"
           aspectRatio="317 / 437"
           width={317}
@@ -106,7 +106,7 @@ export default function GalleryDesktop() {
       </div>
 
       <GalleryImage
-        src="/images/ame8.png"
+        src="/images/ame8.webp"
         alt="Terrazas con vistas 360°"
         caption="Terrazas con vistas 360°"
         aspectRatio="1404 / 720"
@@ -115,21 +115,21 @@ export default function GalleryDesktop() {
 
       <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3 pb-24">
         <GalleryImage
-          src="/images/ame9.png"
+          src="/images/ame9.webp"
           alt="Sauna"
           caption="Sauna"
           aspectRatio="456 / 568"
         />
 
         <GalleryImage
-          src="/images/ame10.png"
+          src="/images/ame10.webp"
           alt="Solarium"
           caption="Solarium"
           aspectRatio="455 / 568"
         />
 
         <GalleryImage
-          src="/images/ame11.png"
+          src="/images/ame11.webp"
           alt="Locales comerciales y gastronómicos"
           caption="Locales comerciales y gastronómicos"
           aspectRatio="456 / 568"
@@ -138,7 +138,7 @@ export default function GalleryDesktop() {
 
       <div className="mt-4 flex flex-col items-start gap-4 md:flex-row">
         <GalleryImage
-          src="/images/ame12.png"
+          src="/images/ame12.webp"
           alt="Sum y parrilleros"
           caption="Sum y parrilleros"
           aspectRatio="537 / 624"
@@ -146,7 +146,7 @@ export default function GalleryDesktop() {
         />
 
         <GalleryImage
-          src="/images/ame13.png"
+          src="/images/ame13.webp"
           alt="Espacio de cowork"
           caption="Espacio de cowork"
           aspectRatio="849 / 449"

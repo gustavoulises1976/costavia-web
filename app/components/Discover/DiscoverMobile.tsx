@@ -5,7 +5,7 @@ export default function DiscoverMobile() {
     <section className="relative h-[calc(100vh-3rem)] w-full overflow-hidden">
       <div className="absolute inset-0 overflow-hidden bg-white">
         <Image
-          src="/images/pileta-interior.png"
+          src="/images/pileta-interior.webp"
           alt="Interior de piscina"
           fill
           style={{

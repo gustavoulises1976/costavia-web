@@ -5,8 +5,8 @@ export default function ResidenciasHero() {
   return (
     <>
       <PageHero
-        imageSrc="/images/resi1.png"
-        mobileImageSrc="/images/resi1-mob.jpg"
+        imageSrc="/images/resi1.webp"
+        mobileImageSrc="/images/resi1-mob.webp"
         imageAlt="Costavia residencias"
         title="Residencias"
         mobileImageStyle={{ scale: 1.2, objectPosition: "50% 50%" }}

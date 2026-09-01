@@ -73,14 +73,14 @@ export default function GalleryMobile() {
   return (
     <section className="w-full border-b border-gray-300 bg-white px-2.5 pb-15">
       <GalleryImage
-        src="/images/ame2.png"
+        src="/images/ame2.webp"
         alt="Piscina exterior"
         caption="Piscina exterior"
         heightPx={238}
       />
 
       <GalleryImage
-        src="/images/ame3.png"
+        src="/images/ame3.webp"
         alt="Lounge"
         caption="Lounge"
         heightPx={348}
@@ -90,7 +90,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame4.png"
+        src="/images/ame4.webp"
         alt="Piscina interior"
         caption="Piscina interior"
         heightPx={238}
@@ -98,7 +98,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame9.png"
+        src="/images/ame9.webp"
         alt="Sauna"
         caption="Sauna"
         heightPx={288}
@@ -107,7 +107,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame5.png"
+        src="/images/ame5.webp"
         alt="Piscinas suspendidas"
         caption="Piscinas suspendidas"
         fullBleed
@@ -115,7 +115,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame6.png"
+        src="/images/ame6.webp"
         alt="Gimnasio"
         caption="Gimnasio"
         heightPx={237}
@@ -123,7 +123,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame7.png"
+        src="/images/ame7.webp"
         alt="Costavia amenities"
         heightPx={238}
         widthClass="w-[45%]"
@@ -132,7 +132,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame8.png"
+        src="/images/ame8.webp"
         alt="Terrazas con vistas 360°"
         caption="Terrazas con vistas 360°"
         heightPx={238}
@@ -140,7 +140,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame10.png"
+        src="/images/ame10.webp"
         alt="Solarium"
         caption="Solarium"
         heightPx={288}
@@ -149,7 +149,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame11.png"
+        src="/images/ame11.webp"
         alt="Locales comerciales y gastronómicos"
         caption={
           <>
@@ -162,7 +162,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame12.png"
+        src="/images/ame12.webp"
         alt="Sum y parrilleros"
         caption="Sum y parrilleros"
         heightPx={288}
@@ -172,7 +172,7 @@ export default function GalleryMobile() {
       />
 
       <GalleryImage
-        src="/images/ame13.png"
+        src="/images/ame13.webp"
         alt="Espacio de cowork"
         caption="Espacio de cowork"
         heightPx={238}

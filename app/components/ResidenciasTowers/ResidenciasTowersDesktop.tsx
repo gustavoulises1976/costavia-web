@@ -4,7 +4,7 @@ export default function ResidenciasTowersDesktop() {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-zinc-50">
       <Image
-        src="/images/resi2.png"
+        src="/images/resi2.webp"
         alt="Costavia tres torres"
         fill
         style={{ objectFit: "cover" }}

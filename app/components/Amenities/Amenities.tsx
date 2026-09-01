@@ -7,18 +7,18 @@ import MediaShowcase, {
 } from "../MediaShowcase/MediaShowcase";
 
 const slides: MediaShowcaseSlide[] = [
-  { src: "/images/resi3-mob.png", mobileStyle: { objectPosition: "50% 50%" } },
-  { src: "/images/resi32-mob.jpg", mobileStyle: { objectPosition: "30% 50%" } },
-  { src: "/images/resi33-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
-  { src: "/images/resi34-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
-  { src: "/images/resi35-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
-  { src: "/images/resi36-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
-  { src: "/images/resi37-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi3-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi32-mob.webp", mobileStyle: { objectPosition: "30% 50%" } },
+  { src: "/images/resi33-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi34-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi35-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi36-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/resi37-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
 ];
 
 const mobileOnlyGridImages: MediaShowcaseGridImage[] = [
   {
-    src: "/images/balcones-mobile.jpg",
+    src: "/images/balcones-mobile.webp",
     alt: "Balcones y terrazas con vegetación nativa",
     caption: (
       <>
@@ -30,7 +30,7 @@ const mobileOnlyGridImages: MediaShowcaseGridImage[] = [
     mobileStyle: { objectPosition: "50% 50%" },
   },
   {
-    src: "/images/ext-mobile.jpeg",
+    src: "/images/ext-mobile.webp",
     alt: "Instalaciones previstas para cocina exterior",
     caption: (
       <>
@@ -42,7 +42,7 @@ const mobileOnlyGridImages: MediaShowcaseGridImage[] = [
     mobileStyle: { objectPosition: "30% 50%" },
   },
   {
-    src: "/images/banos-mobile.jpg",
+    src: "/images/banos-mobile.webp",
     alt: "Baños con microcemento, sanitarios Ferrum y grifería FV",
     caption: (
       <>
@@ -54,13 +54,13 @@ const mobileOnlyGridImages: MediaShowcaseGridImage[] = [
     mobileStyle: { objectPosition: "50% 50%" },
   },
   {
-    src: "/images/resi-grid-mob.jpg",
+    src: "/images/resi-grid-mob.webp",
     alt: "Cocinas con diseño en isla",
     caption: <>Cocinas con diseño en isla.</>,
     mobileStyle: { objectPosition: "50% 50%" },
   },
   {
-    src: "/images/resi-grid-mob-2.png",
+    src: "/images/resi-grid-mob-2.webp",
     alt: "Placares completos en todos los dormitorios",
     caption: (
       <>
@@ -72,7 +72,7 @@ const mobileOnlyGridImages: MediaShowcaseGridImage[] = [
     mobileStyle: { objectPosition: "50% 50%" },
   },
   {
-    src: "/images/resi-grid-mob-3.png",
+    src: "/images/resi-grid-mob-3.webp",
     alt: "Pisos de madera de ingeniería en roble en todos los ambientes",
     caption: (
       <>
@@ -87,7 +87,7 @@ const mobileOnlyGridImages: MediaShowcaseGridImage[] = [
 
 const gridImages = [
   {
-    src: "/images/resi4.png",
+    src: "/images/resi4.webp",
     alt: "Balcones y terrazas con vegetación nativa",
     caption: (
       <>
@@ -98,7 +98,7 @@ const gridImages = [
     ),
   },
   {
-    src: "/images/resi5.png",
+    src: "/images/resi5.webp",
     alt: "Instalaciones previstas para cocina exterior",
     caption: (
       <>
@@ -109,7 +109,7 @@ const gridImages = [
     ),
   },
   {
-    src: "/images/resi6.jpg",
+    src: "/images/resi6.webp",
     alt: "Baños con microcemento, sanitarios Ferrum y grifería FV",
     caption: (
       <>

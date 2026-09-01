@@ -6,29 +6,29 @@ import MediaShowcase, {
 } from "../MediaShowcase/MediaShowcase";
 
 const slides: MediaShowcaseSlide[] = [
-  { src: "/images/resicaru1.png" },
-  { src: "/images/resicaru2.png" },
-  { src: "/images/resicaru3.jpg" },
-  { src: "/images/resicaru4.jpg" },
-  { src: "/images/resicaru5.png" },
+  { src: "/images/resicaru1.webp" },
+  { src: "/images/resicaru2.webp" },
+  { src: "/images/resicaru3.webp" },
+  { src: "/images/resicaru4.webp" },
+  { src: "/images/resicaru5.webp" },
 ];
 
 const mobileSlides: MediaShowcaseSlide[] = [
-  { src: "/images/slide1-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
-  { src: "/images/slide2-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
-  { src: "/images/slide3-mob.jpg", mobileStyle: { objectPosition: "30% 50%" } },
-  { src: "/images/slide4-mob.jpg", mobileStyle: { objectPosition: "70% 50%" } },
-  { src: "/images/slide5-mob.jpg", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/slide1-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/slide2-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
+  { src: "/images/slide3-mob.webp", mobileStyle: { objectPosition: "30% 50%" } },
+  { src: "/images/slide4-mob.webp", mobileStyle: { objectPosition: "70% 50%" } },
+  { src: "/images/slide5-mob.webp", mobileStyle: { objectPosition: "50% 50%" } },
 ];
 
 const gridImages = [
   {
-    src: "/images/resi7.png",
+    src: "/images/resi7.webp",
     alt: "Cocinas con diseño en isla",
     caption: <>Cocinas con diseño en isla.</>,
   },
   {
-    src: "/images/resi8.png",
+    src: "/images/resi8.webp",
     alt: "Placares completos en todos los dormitorios",
     caption: (
       <>
@@ -39,7 +39,7 @@ const gridImages = [
     ),
   },
   {
-    src: "/images/resi9.png",
+    src: "/images/resi9.webp",
     alt: "Pisos de madera de ingeniería en roble en todos los ambientes",
     caption: (
       <>

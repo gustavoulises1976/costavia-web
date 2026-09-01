@@ -40,7 +40,7 @@ export default function LifestyleDesktop() {
       <div className="relative h-[432px] w-full px-[10px] pb-[10px]">
         <div className="relative h-full w-full overflow-hidden">
           <Image
-            src="/images/proyecto-2.jpg"
+            src="/images/proyecto-2.webp"
             alt="Costavia arquitectura y estilo de vida"
             fill
             style={{ objectFit: "cover", objectPosition: "10px -400px" }}

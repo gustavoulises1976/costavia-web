@@ -5,11 +5,11 @@ import { useState } from "react";
 import ChevronIcon from "../../icons/ChevronIcon";
 
 const slides = [
-  "/images/proyecto-5.png",
-  "/images/carou2.png",
-  "/images/carou3.png",
-  "/images/carou4.png",
-  "/images/carou5.png",
+  "/images/proyecto-5.webp",
+  "/images/carou2.webp",
+  "/images/carou3.webp",
+  "/images/carou4.webp",
+  "/images/carou5.webp",
 ];
 
 export default function CarouselDesktop() {

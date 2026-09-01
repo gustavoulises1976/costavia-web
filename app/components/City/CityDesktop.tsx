@@ -4,7 +4,7 @@ export default function CityDesktop() {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-zinc-50">
       <Image
-        src="/images/proyecto-3.png"
+        src="/images/proyecto-3.webp"
         alt="Costavia y la ciudad"
         fill
         style={{ objectFit: "cover" }}

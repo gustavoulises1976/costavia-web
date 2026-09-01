@@ -9,7 +9,7 @@ export default function ResidenciasMobile() {
           style={{ aspectRatio: "946 / 480" }}
         >
           <Image
-            src="/images/living-tarde.png"
+            src="/images/living-tarde.webp"
             alt="Living al atardecer"
             fill
             style={{ objectFit: "cover", objectPosition: "center" }}
@@ -54,7 +54,7 @@ export default function ResidenciasMobile() {
           style={{ aspectRatio: "474 / 624" }}
         >
           <Image
-            src="/images/tarde-sol.png"
+            src="/images/tarde-sol.webp"
             alt="Tarde de sol"
             fill
             style={{ objectFit: "cover", objectPosition: "center" }}
@@ -85,7 +85,7 @@ export default function ResidenciasMobile() {
           style={{ aspectRatio: "912 / 449" }}
         >
           <Image
-            src="/images/dos-torres.png"
+            src="/images/dos-torres.webp"
             alt="Dos torres"
             fill
             style={{ objectFit: "cover", objectPosition: "center" }}

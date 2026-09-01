@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const images = [
-  { src: "/images/proyecto-6.jpg", width: 332, height: 453 },
-  { src: "/images/proyecto-7.png", width: 336, height: 507 },
-  { src: "/images/proyecto-8.png", width: 267, height: 333 },
-  { src: "/images/proyecto-9.png", width: 415, height: 610 },
+  { src: "/images/proyecto-6.webp", width: 332, height: 453 },
+  { src: "/images/proyecto-7.webp", width: 336, height: 507 },
+  { src: "/images/proyecto-8.webp", width: 267, height: 333 },
+  { src: "/images/proyecto-9.webp", width: 415, height: 610 },
 ];
 
 const textStyle = {

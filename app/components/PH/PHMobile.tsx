@@ -87,7 +87,7 @@ export default function PHMobile() {
 
       <div className="relative h-[45%] w-full overflow-hidden">
         <Image
-          src="/images/proyecto-10.png"
+          src="/images/proyecto-10.webp"
           alt="Costavia PH"
           fill
           style={{ objectFit: "cover", objectPosition: "10% 10%" }}

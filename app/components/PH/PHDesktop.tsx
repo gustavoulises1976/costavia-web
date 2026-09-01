@@ -87,7 +87,7 @@ export default function PHDesktop() {
 
         <div className="relative h-full min-h-[320px] overflow-hidden">
           <Image
-            src="/images/proyecto-10.png"
+            src="/images/proyecto-10.webp"
             alt="Costavia PH"
             fill
             style={{ objectFit: "cover", objectPosition: "10% 10%" }}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import CostaviaLogo from "../../icons/CostaviaLogo";
 
@@ -15,6 +15,26 @@ const navItems = [
 
 export default function NavbarMobile() {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Con el menú abierto se bloquea el scroll de la página de atrás.
+  // Se bloquean <html> y <body>: globals.css declara `overflow-x: hidden` en
+  // los dos, y con overflow no-visible en <html> el contenedor de scroll pasa
+  // a ser ese, así que tocar solo <body> no alcanzaría.
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const root = document.documentElement;
+    const { body } = document;
+    const previous = { root: root.style.overflow, body: body.style.overflow };
+
+    root.style.overflow = "hidden";
+    body.style.overflow = "hidden";
+
+    return () => {
+      root.style.overflow = previous.root;
+      body.style.overflow = previous.body;
+    };
+  }, [isOpen]);
 
   return (
     <header className="fixed inset-x-0 top-0 z-40 flex h-12 items-center border-b border-black bg-white px-4">
@@ -51,8 +71,10 @@ export default function NavbarMobile() {
       {isOpen && (
         <nav
           aria-label="Main navigation"
-          className="fixed inset-x-0 top-12 bottom-0 z-20 flex flex-col items-center bg-white px-6 py-10"
+          className="fixed inset-x-0 top-12 z-20 flex h-[calc(100dvh-3rem)] flex-col items-center overflow-y-auto overscroll-contain bg-white px-6 py-10"
         >
+          {/* flex-1: los links se centran en el espacio entre el tope y el
+              ícono, que es hermano en la columna y no queda tapado. */}
           <div className="flex flex-1 flex-col items-center justify-center gap-6">
             {navItems.map((item) => (
               <Link
@@ -76,7 +98,13 @@ export default function NavbarMobile() {
             ))}
           </div>
 
-          <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://instagram.com"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0"
+          >
             <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_254_4961)">
                 <path fillRule="evenodd" clipRule="evenodd" d="M18.3903 2.00024H7.55697C3.81754 2.00024 0.786133 5.12944 0.786133 8.98949V20.1723C0.786133 24.0323 3.81754 27.1615 7.55697 27.1615H18.3903C22.1297 27.1615 25.1611 24.0323 25.1611 20.1723V8.98949C25.1611 5.12944 22.1297 2.00024 18.3903 2.00024ZM22.7913 20.1723C22.7839 22.6781 20.8178 24.7076 18.3903 24.7153H7.55697C5.12942 24.7076 3.16336 22.6781 3.15592 20.1723V8.98949C3.16336 6.48364 5.12942 4.45415 7.55697 4.44648H18.3903C20.8178 4.45415 22.7839 6.48364 22.7913 8.98949V20.1723ZM19.4059 9.33895C20.1538 9.33895 20.7601 8.71311 20.7601 7.9411C20.7601 7.1691 20.1538 6.54326 19.4059 6.54326C18.658 6.54326 18.0518 7.1691 18.0518 7.9411C18.0518 8.71311 18.658 9.33895 19.4059 9.33895ZM12.9736 8.29057C9.60815 8.29057 6.87988 11.1068 6.87988 14.5809C6.87988 18.055 9.60815 20.8712 12.9736 20.8712C16.3391 20.8712 19.0674 18.055 19.0674 14.5809C19.071 12.9114 18.4301 11.3093 17.2865 10.1289C16.1429 8.94838 14.5909 8.28685 12.9736 8.29057ZM9.24967 14.5809C9.24967 16.7039 10.9169 18.425 12.9736 18.425C15.0303 18.425 16.6976 16.7039 16.6976 14.5809C16.6976 12.4578 15.0303 10.7368 12.9736 10.7368C10.9169 10.7368 9.24967 12.4578 9.24967 14.5809Z" fill="black"/>

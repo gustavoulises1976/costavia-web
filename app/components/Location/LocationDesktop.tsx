@@ -6,7 +6,7 @@ export default function LocationDesktop() {
     <section className="relative h-screen w-full overflow-hidden bg-zinc-50 px-[10px] py-[10px]">
       <div className="relative h-full w-full overflow-hidden">
         <Image
-          src="/images/proyecto-4.png"
+          src="/images/proyecto-4.webp"
           alt="Ubicación de Costavia"
           fill
           style={{ objectFit: "cover" }}

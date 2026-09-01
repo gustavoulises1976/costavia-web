@@ -6,7 +6,7 @@ export default function LaGranVidaDesktop() {
       <div className="relative h-full w-full overflow-hidden border border-white/80 bg-white shadow-[0_0_0_1px_rgba(255,255,255,0.8)]">
         <div className="absolute inset-x-0 -top-10 bottom-0">
           <Image
-            src="/images/pileta-rio.png"
+            src="/images/pileta-rio.webp"
             alt="Costavia pool view"
             fill
             style={{ objectFit: "cover", objectPosition: "center bottom" }}

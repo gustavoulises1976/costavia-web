@@ -20,11 +20,11 @@ type Slide = {
 };
 
 const slides: Slide[] = [
-  { src: "/images/proyecto-5-mob.png", style: { objectPosition: "70% 50%" } },
-  { src: "/images/carou2-mob.jpg", style: { objectPosition: "50% 50%" } },
-  { src: "/images/carou3-mob.jpg", style: { objectPosition: "41% 50%" } },
-  { src: "/images/carou4.jpg", style: { objectPosition: "35% 50%" } },
-  { src: "/images/carou5-mob.jpg", style: { objectPosition: "62% 50%" } },
+  { src: "/images/proyecto-5-mob.webp", style: { objectPosition: "70% 50%" } },
+  { src: "/images/carou2-mob.webp", style: { objectPosition: "50% 50%" } },
+  { src: "/images/carou3-mob.webp", style: { objectPosition: "41% 50%" } },
+  { src: "/images/carou4-mob.webp", style: { objectPosition: "35% 50%" } },
+  { src: "/images/carou5-mob.webp", style: { objectPosition: "62% 50%" } },
 ];
 
 // Cuánto se espera sin eventos de scroll para dar por frenada la slide.

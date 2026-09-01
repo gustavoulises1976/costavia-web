@@ -4,7 +4,7 @@ export default function CityMobile() {
   return (
     <section className="relative h-[calc(100vh-3rem)] w-full overflow-hidden bg-zinc-50">
       <Image
-        src="/images/proyecto-3-mob.jpg"
+        src="/images/proyecto-3-mob.webp"
         alt="Costavia y la ciudad"
         fill
         style={{

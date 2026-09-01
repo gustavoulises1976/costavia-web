@@ -6,7 +6,7 @@ export default function LaGranVidaMobile() {
       <div className="absolute inset-0 p-2">
         <div className="relative h-full w-full overflow-hidden border border-white/80 bg-white shadow-[0_0_0_1px_rgba(255,255,255,0.8)]">
           <Image
-            src="/images/pileta-rio-mobile.png"
+            src="/images/pileta-rio-mobile.webp"
             alt="Costavia pool view"
             fill
             style={{ objectFit: "cover", objectPosition: "100% center" }}

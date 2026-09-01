@@ -4,7 +4,7 @@ import type { CSSProperties } from "react";
 // Recorte vertical propio de mobile. La versión apaisada (resi2.png, 1440x861)
 // la sigue usando el desktop; acá con object-fit: cover se perdía ~70% del
 // ancho y objectPosition en Y quedaba inerte por no haber sobrante vertical.
-const imageSrc = "/images/towers-mob.jpg";
+const imageSrc = "/images/towers-mob.webp";
 
 // Se mergea encima del objectFit. La imagen (1672x2648, ratio 0.63) sigue
 // siendo menos alargada que la pantalla, así que cover escala por el alto y el

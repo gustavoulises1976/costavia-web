@@ -39,7 +39,7 @@ export default function LifestyleMobile() {
       <div className="p-2">
         <div className="relative h-[300px] w-full overflow-hidden">
           <Image
-            src="/images/proyecto-2.jpg"
+            src="/images/proyecto-2.webp"
             alt="Costavia arquitectura y estilo de vida"
             fill
             style={{ objectFit: "cover", scale: 2.5, objectPosition: "-5px -30px" }}

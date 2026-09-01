@@ -9,7 +9,7 @@ export default function CostaviaHeroDesktop() {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-zinc-50">
       <Image
-        src="/images/home-hero.png"
+        src="/images/home-hero.webp"
         alt="Costavia hero"
         fill
         style={{ objectFit: "cover", objectPosition: "top" }}

@@ -50,7 +50,7 @@ export default function ProjectDesktop() {
 
         <div className="relative h-full min-h-[320px] overflow-hidden">
           <Image
-            src="/images/arquitectura.png"
+            src="/images/arquitectura.webp"
             alt="Arquitectura del proyecto"
             fill
             style={{ objectFit: "cover", objectPosition: "center top" }}

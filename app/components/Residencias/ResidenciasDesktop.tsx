@@ -9,7 +9,7 @@ export default function ResidenciasDesktop() {
             <div className="flex flex-col gap-4 bg-white">
               <div className="relative h-[480px] overflow-hidden bg-white">
                 <Image
-                  src="/images/living-tarde.png"
+                  src="/images/living-tarde.webp"
                   alt="Living al atardecer"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center" }}
@@ -53,7 +53,7 @@ export default function ResidenciasDesktop() {
 
             <div className="relative h-[660px] overflow-hidden bg-white">
               <Image
-                src="/images/interior-vidrio.png"
+                src="/images/interior-vidrio.webp"
                 alt="Interior con vidrio"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
@@ -65,7 +65,7 @@ export default function ResidenciasDesktop() {
           <div className="grid grid-cols-[474px_912px] gap-[12px]">
             <div className="relative h-[624px] w-[474px] overflow-hidden bg-white">
               <Image
-                src="/images/tarde-sol.png"
+                src="/images/tarde-sol.webp"
                 alt="Tarde de sol"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
@@ -76,7 +76,7 @@ export default function ResidenciasDesktop() {
             <div className="flex flex-col gap-3 bg-white">
               <div className="relative h-[449px] w-[912px] overflow-hidden bg-white">
                 <Image
-                  src="/images/dos-torres.png"
+                  src="/images/dos-torres.webp"
                   alt="Dos torres"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center" }}

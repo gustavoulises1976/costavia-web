@@ -41,7 +41,7 @@ export default function ProjectMobile() {
 
       <div className="relative h-[55%] w-full overflow-hidden">
         <Image
-          src="/images/arquitectura.png"
+          src="/images/arquitectura.webp"
           alt="Arquitectura del proyecto"
           fill
           style={{ objectFit: "cover", objectPosition: "center top" }}

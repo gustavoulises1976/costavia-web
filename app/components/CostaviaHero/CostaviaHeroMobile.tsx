@@ -10,7 +10,7 @@ export default function CostaviaHeroMobile() {
   return (
     <section className="w-full h-screen relative overflow-hidden bg-zinc-50">
       <Image
-        src="/images/home-hero-mobile.png"
+        src="/images/home-hero-mobile.webp"
         alt="Costavia hero mobile"
         fill
         style={{

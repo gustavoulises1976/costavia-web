@@ -8,7 +8,7 @@ export default function LocationMobile() {
           sección toma su alto, así no quedan franjas vacías como con contain. */}
       <div className="relative w-full overflow-hidden">
         <Image
-          src="/images/proyecto-4-mob.png"
+          src="/images/proyecto-4-mob.webp"
           alt="Ubicación de Costavia"
           width={1348}
           height={1852}
