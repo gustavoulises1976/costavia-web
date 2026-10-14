@@ -1,14 +1,14 @@
 import nodemailer from "nodemailer";
 
-const TO = process.env.CONTACT_TO ?? "info@costavia.com.ar";
+const FROM = "info@costavia.com.ar";
+const TO = "info@costavia.com.ar";
 
-function required(name: string) {
-  const value = process.env[name];
-  if (!value) {
-    throw new Error(`Falta la variable de entorno ${name}`);
-  }
-  return value;
-}
+const transporter = nodemailer.createTransport({
+  host: "127.0.0.1",
+  port: 25,
+  secure: false,
+  tls: { rejectUnauthorized: false },
+});
 
 function escapeHtml(value: string) {
   return value
@@ -55,20 +55,8 @@ export async function POST(request: Request) {
   }
 
   try {
-    const port = Number(process.env.SMTP_PORT ?? 465);
-
-    const transporter = nodemailer.createTransport({
-      host: required("SMTP_HOST"),
-      port,
-      secure: port === 465,
-      auth: {
-        user: required("SMTP_USER"),
-        pass: required("SMTP_PASSWORD"),
-      },
-    });
-
     await transporter.sendMail({
-      from: `"Web Costavia" <${process.env.SMTP_FROM ?? process.env.SMTP_USER}>`,
+      from: `"Web Costavia" <${FROM}>`,
       to: TO,
       replyTo: `"${data.name}" <${data.email}>`,
       subject: `Nueva consulta web — ${data.name}`,
