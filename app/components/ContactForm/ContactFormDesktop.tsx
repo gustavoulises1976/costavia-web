@@ -79,7 +79,14 @@ export default function ContactFormDesktop() {
             >
               OBRING
               <br />
-              +54 9 3412 10-8514
+              <a
+                href="https://wa.me/5493412108514"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                +54 9 3412 10-8514
+              </a>
             </p>
             <p
               style={{
@@ -95,7 +102,14 @@ export default function ContactFormDesktop() {
             >
               ROSENTAL INVERSIONES
               <br />
-              +54 9 3416 71-8710
+              <a
+                href="https://wa.me/5493416718710"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                +54 9 3416 71-8710
+              </a>
             </p>
           </div>
         </div>

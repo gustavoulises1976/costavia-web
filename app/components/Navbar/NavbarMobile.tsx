@@ -99,7 +99,7 @@ export default function NavbarMobile() {
           </div>
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/costavia.rosario/?hl=es-la"
             aria-label="Instagram"
             target="_blank"
             rel="noopener noreferrer"

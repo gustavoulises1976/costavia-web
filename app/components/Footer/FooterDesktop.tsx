@@ -22,7 +22,14 @@ export default function FooterDesktop() {
           <div className="invert">
             <RosentalLogo className="h-6" />
           </div>
-          <InstagramIcon className="h-4.5 w-4.5" />
+          <a
+            href="https://www.instagram.com/costavia.rosario/?hl=es-la"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InstagramIcon className="h-4.5 w-4.5" />
+          </a>
         </div>
       </div>
 
@@ -42,9 +49,18 @@ export default function FooterDesktop() {
           >
             GAGLIARDO
             <br />
-            +54 9 3412 10-5514
+            <a
+              href="https://wa.me/5493412105514"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              +54 9 3412 10-5514
+            </a>
             <br />
-            info@obring.com.ar
+            <a href="mailto:info@obring.com.ar" className="hover:underline">
+              info@obring.com.ar
+            </a>
           </p>
           <p
             style={{
@@ -58,7 +74,14 @@ export default function FooterDesktop() {
           >
             ROSENTAL INVERSIONES
             <br />
-            +54 9 3416 71-9710
+            <a
+              href="https://wa.me/5493416719710"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              +54 9 3416 71-9710
+            </a>
           </p>
         </div>
 
